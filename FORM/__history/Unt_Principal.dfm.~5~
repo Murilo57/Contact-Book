@@ -1,0 +1,169 @@
+object FrmAgenda: TFrmAgenda
+  Left = 0
+  Top = 0
+  Caption = 'Agenda de Contatos'
+  ClientHeight = 671
+  ClientWidth = 462
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object LblAgenda: TLabel
+    Left = 30
+    Top = 25
+    Width = 339
+    Height = 40
+    Caption = 'Agenda De Contatos'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -33
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object LblNome: TLabel
+    Left = 42
+    Top = 160
+    Width = 35
+    Height = 16
+    Caption = 'Nome'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object LblCelular: TLabel
+    Left = 42
+    Top = 225
+    Width = 44
+    Height = 16
+    Caption = 'Celular'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object LblBloqueado: TLabel
+    Left = 42
+    Top = 300
+    Width = 67
+    Height = 16
+    Caption = 'Bloqueado'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object LblObservacao: TLabel
+    Left = 42
+    Top = 375
+    Width = 77
+    Height = 16
+    Caption = 'Observa'#231#227'o'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object LblData: TLabel
+    Left = 46
+    Top = 545
+    Width = 159
+    Height = 16
+    Caption = 'Data e hora de cadastro'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object dbtHora: TDBText
+    Left = 46
+    Top = 575
+    Width = 182
+    Height = 17
+    DataField = 'DATA'
+    DataSource = DM.dtsAgenda
+  end
+  object DBEdtNome: TDBEdit
+    Left = 42
+    Top = 184
+    Width = 251
+    Height = 24
+    DataField = 'NOME'
+    DataSource = DM.dtsAgenda
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+  end
+  object DBEdtCelular: TDBEdit
+    Left = 44
+    Top = 247
+    Width = 161
+    Height = 24
+    DataField = 'CELULAR'
+    DataSource = DM.dtsAgenda
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+  end
+  object cdBloqueado: TDBCheckBox
+    Left = 42
+    Top = 322
+    Width = 121
+    Height = 17
+    Caption = 'cdBloqueado'
+    DataField = 'BLOQUEADO'
+    DataSource = DM.dtsAgenda
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+    ValueChecked = 'True'
+    ValueUnchecked = 'False'
+  end
+  object dbmObersvacao: TDBMemo
+    Left = 42
+    Top = 405
+    Width = 366
+    Height = 116
+    Cursor = crCross
+    DataField = 'OBSERVACAO'
+    DataSource = DM.dtsAgenda
+    TabOrder = 3
+  end
+  object DBNavigator: TDBNavigator
+    Left = 42
+    Top = 90
+    Width = 297
+    Height = 50
+    DataSource = DM.dtsAgenda
+    VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast, nbInsert, nbDelete, nbEdit, nbPost, nbCancel]
+    TabOrder = 4
+  end
+end

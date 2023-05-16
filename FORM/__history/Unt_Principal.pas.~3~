@@ -1,0 +1,39 @@
+unit Unt_Principal;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls, DBCtrls, Mask;
+
+type
+  TFrmAgenda = class(TForm)
+    LblAgenda: TLabel;
+    LblNome: TLabel;
+    DBEdtNome: TDBEdit;
+    LblCelular: TLabel;
+    DBEdtCelular: TDBEdit;
+    cdBloqueado: TDBCheckBox;
+    LblBloqueado: TLabel;
+    LblObservacao: TLabel;
+    dbmObersvacao: TDBMemo;
+    LblData: TLabel;
+    dbtHora: TDBText;
+    DBNavigator1: TDBNavigator;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmAgenda: TFrmAgenda;
+
+implementation
+
+uses Unt_Conexao;
+
+{$R *.dfm}
+
+
+end.

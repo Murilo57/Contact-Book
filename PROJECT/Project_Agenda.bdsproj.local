@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/03/10 15:02:54.524.pas,C:\Documents and Settings\Aldo\Meus documentos\Borland Studio Projects\Unit1.pas=C:\Documents and Settings\Aldo\Meus documentos\Projetos Delphi\Agenda de Contatos\FORM\Unt_Principal.pas</Transaction>
+    <Transaction>2023/03/10 15:02:54.524.dfm,C:\Documents and Settings\Aldo\Meus documentos\Borland Studio Projects\Unit1.dfm=C:\Documents and Settings\Aldo\Meus documentos\Projetos Delphi\Agenda de Contatos\FORM\Unt_Principal.dfm</Transaction>
+    <Transaction>2023/03/10 15:03:07.483.bdsproj,C:\Documents and Settings\Aldo\Meus documentos\Borland Studio Projects\Project1.bdsproj=C:\Documents and Settings\Aldo\Meus documentos\Projetos Delphi\Agenda de Contatos\PROJECT\Project_Agenda.bdsproj</Transaction>
+    <Transaction>2023/03/10 15:21:05.980.pas,C:\Documents and Settings\Aldo\Meus documentos\Projetos Delphi\Agenda de Contatos\PROJECT\Unit1.pas=C:\Documents and Settings\Aldo\Meus documentos\Projetos Delphi\Agenda de Contatos\FORM\Unt_Conexao.pas</Transaction>
+    <Transaction>2023/03/10 15:21:05.980.dfm,C:\Documents and Settings\Aldo\Meus documentos\Projetos Delphi\Agenda de Contatos\PROJECT\Unit1.dfm=C:\Documents and Settings\Aldo\Meus documentos\Projetos Delphi\Agenda de Contatos\FORM\Unt_Conexao.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
